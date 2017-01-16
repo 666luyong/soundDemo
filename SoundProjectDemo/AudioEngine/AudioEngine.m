@@ -89,6 +89,9 @@ OSStatus render(void *inRefCon, // Pointer to an object to pass in parameters
 
 - (void)playWithfrequency:(float)frequency
 {
+    if (_audioUnit)
+        [self stop];
+    
     _frequency = frequency;
     [self createOutputAudioUnit];
     AudioUnitInitialize(_audioUnit);
