@@ -86,6 +86,7 @@
     [self reSetReferenceAndTarget];
     [self resetPlayersNote];
     [self.testBtn setTitle:@"listen" forState:UIControlStateNormal];
+    self.targetBtn.enabled = NO;
 }
 
 - (void)reSetReferenceAndTarget
