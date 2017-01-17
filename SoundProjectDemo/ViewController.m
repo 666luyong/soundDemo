@@ -87,6 +87,7 @@
     [self resetPlayersNote];
     [self.testBtn setTitle:@"listen" forState:UIControlStateNormal];
     self.targetBtn.enabled = NO;
+    self.targetBtn.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (void)reSetReferenceAndTarget
